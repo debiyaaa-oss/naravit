@@ -2,61 +2,72 @@ body{
   margin:0;
   font-family: 'Quicksand', sans-serif;
   background-image: url("Background.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
   overflow:hidden;
 }
 
-/* Blur Background */
+/* Blur */
 #bodyblur{
   position:fixed;
-  top:0;
-  left:0;
   width:100%;
   height:100%;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
   opacity:0;
   visibility:hidden;
   transition:1s;
 }
 
-/* Konten */
+/* Container utama */
 #konten{
   position:relative;
-  text-align:center;
-  top:100vh;
-  transition:1s;
+  padding:20px;
+  z-index:2;
 }
 
 /* Foto */
 #fotoloveu{
   opacity:0;
-  height:0;
   transition:1s;
 }
 
+#fotoloveu img{
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Teks */
 #penutup{
-  font-size:1.1rem;
   display:block;
   margin-top:15px;
-  color:white;
+  font-size:20px;
+  color:black;
+  font-weight:bold;
 }
 
 /* Tombol */
 #tomAksi{
+  margin-top:15px;
   visibility:hidden;
   opacity:0;
   transition:1s;
-  margin-top:20px;
 }
 
 .button{
   padding:10px 20px;
   background:#55009E;
   color:white;
-  border-radius:20px;
+  border-radius:25px;
   text-decoration:none;
-  cursor:pointer;
+  font-size:14px;
+  display:inline-block;
 }
 
 /* Animasi foto */
@@ -66,10 +77,10 @@ body{
 
 @keyframes degdeg{
   from{transform:scale(1);}
-  to{transform:scale(1.1);}
+  to{transform:scale(1.07);}
 }
 
-/* Hati jatuh */
+/* Hati */
 .fa-heart{
   position:fixed;
   bottom:-20px;
