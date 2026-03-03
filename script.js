@@ -74,7 +74,6 @@ function aksifoto(){
 }
 
 function duar(){
-  document.getElementById('konten').style.top="0";
   document.body.style.backgroundColor="#000";
 }
 
@@ -110,3 +109,4 @@ function ketik(){
 
 // Jalankan saat halaman load
 mulai();
+
