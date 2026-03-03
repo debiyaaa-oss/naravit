@@ -6,6 +6,7 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   min-height:100vh;
+  background-attachment: fixed;
 
   display:flex;
   justify-content:center;
@@ -29,7 +30,8 @@ body{
 #konten{
   position:relative;
   padding:20px;
-  z-index:2;
+  z-index:10;
+  transform:translateY(-30px);
 }
 
 /* Foto */
@@ -46,15 +48,16 @@ body{
 /* Teks */
 #penutup{
   display:block;
-  margin-top:15px;
-  font-size:20px;
-  color:black;
+  margin-top:20px;
+  font-size:22px;
+  color:white;
   font-weight:bold;
+  text-shadow:0 2px 8px rgba(0,0,0,0.6);
 }
 
 /* Tombol */
 #tomAksi{
-  margin-top:15px;
+  margin-top:25px;
   visibility:hidden;
   opacity:0;
   transition:1s;
@@ -86,7 +89,8 @@ body{
   bottom:-20px;
   animation:float linear infinite;
   font-size:20px;
-  color:red;
+  color:white;
+  text-shadow:0 0 10px white;
 }
 
 @keyframes float{
